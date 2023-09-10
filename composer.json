@@ -4,6 +4,11 @@
     "type": "project",
     "license": "GPL-3.0-or-later",
     "minimum-stability": "stable",
+    "keywords":[
+      "phpakturk",
+      "phpakturk-tr",
+      "php-mvc",
+    ],
     "require": {
         "php": ">=7.3"
     },
