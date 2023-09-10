@@ -1,0 +1,169 @@
+:root{
+    --mad-a-color:#eee;
+    --mad-renk2:#a71930;
+    --mad-renk3:#a40439
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#eee;
+}
+[takim-turu=galatasaray]{
+    --mad-a-hover-color:#fcbb11;
+    --mad-renk1:#86011d;
+}
+[takim-turu=fenerbahce]{
+    --mad-a-hover-color:yellow;
+    --mad-renk1:#194ca7;
+}
+[takim-turu=trabzonspor]{
+    --mad-a-hover-color:#12c0e4;
+    --mad-renk1:#a21b32;
+}
+.kapsayici nav.ustalan{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:8vh;
+    background:var(--mad-renk1);
+    color:var(--mad-a-color)!important;
+    font-family:Roboto,sans-serif;
+}
+.kapsayici nav.ustalan a{
+text-decoration:none;
+color:var(--mad-a-color);
+}
+.kapsayici nav.ustalan .nav-logo{
+    font-size:22px;
+    letter-spacing:3px;
+    font-weight:700;
+}
+.kapsayici nav.ustalan .nav-links{
+    display:flex;
+    justify-content:space-around;
+    width:60%;
+}
+.kapsayici .card.kategoriler li,.kapsayici nav.ustalan .nav-links li{
+    list-style:none;
+}
+.kapsayici nav.ustalan .nav-links a{
+    font-size:14px;
+    letter-spacing:1px;
+}
+.kapsayici nav.ustalan .nav-links a:hover,.kapsayici nav.ustalan .nav-logo a:hover{
+    color:var(--mad-a-hover-color);
+}
+.kapsayici nav.ustalan .burger{
+    display:none;
+    cursor:pointer;
+}
+.kapsayici nav.ustalan .burger .line1,.kapsayici nav.ustalan .burger .line2,.kapsayici nav.ustalan .burger .line3{
+    width:24px;
+    height:3px;
+    background-color:var(--mad-a-color);
+    transition:.3s;
+}
+.kapsayici nav.ustalan .burger .line2{
+    margin:3px 0;
+}
+.kapsayici .icerik{
+    padding-left:7px;
+    padding-right:7px;
+}
+.kapsayici .solbolum{
+    float:left;
+    width:75%;
+}
+.kapsayici .sagbolum{
+    float:left;
+    width:25%;
+    padding-left:20px;
+}
+.kapsayici .sagbolum form .aramayap-input#kelime{
+    outline:0;
+    padding:6px;
+    border:1px solid #e2dfdf;
+    width:100%;
+}
+.kapsayici .fakeimg{
+    background-color:#aaa;
+    width:100%;
+    padding:20px;
+}
+.kapsayici .card{
+    background-color:#fff;
+    padding:20px;
+    margin-top:20px;
+}
+.kapsayici .card.kategoriler li a{
+    color:var(--mad-renk1);
+    text-decoration:none;
+}
+.kapsayici .row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.kapsayici .footer{
+    padding:20px;
+    text-align:center;
+    background:var(--mad-renk1);
+    color:var(--mad-a-hover-color);
+    margin-top:20px;
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
+    .kapsayici .sagbolum,.kapsayici .solbolum{
+        width:100%;
+        padding:0;
+    }
+    .kapsayici nav.ustalan .burger{
+        display:block;
+    }
+    .kapsayici nav.ustalan .nav-links{
+        position:absolute;
+        top:8vh;
+        right:0;
+        width:60%;
+        height:92vh;
+        display:flex;
+        flex-direction:column;
+        background:var(--mad-renk1);
+        align-items:center;
+        justify-content:space-around;
+        transform:translateX(100%);
+        transition:.5s;
+    }
+    .kapsayici nav.ustalan .nav-links li{
+        opacity:0;
+    }
+}
+.kapsayici nav.ustalan .nav-active{
+    transform:translateX(0);
+}
+.kapsayici nav.ustalan .close .line1{
+    transform:rotate(-45deg) translate(-5px,3px);
+    transition:.3s;
+}
+.kapsayici nav.ustalan .close .line2{
+    opacity:0;
+}
+.kapsayici nav.ustalan .close .line3{
+    transform:rotate(45deg) translate(-5px,-3px);
+    transition:.3s;
+}
+@keyframes linksFade{
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}

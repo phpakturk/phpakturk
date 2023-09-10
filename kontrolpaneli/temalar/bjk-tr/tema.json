@@ -1,0 +1,9 @@
+{
+"varliklar":{
+"stiller":{
+"stil":"{panel_tema_adres}stil.css"
+},"islevsellikler":{
+"tema":"{panel_tema_adres}tema.js"
+}
+}
+}

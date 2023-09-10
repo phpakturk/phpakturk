@@ -1,0 +1,28 @@
+{
+    "name": "webturk/webturk",
+    "description": "PHP WebTurk Framework",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.3"
+    }, 
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    },
+    "scripts": {
+    "test": "phpunit",
+    "build": "npm run production"
+    },
+    "config":{
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

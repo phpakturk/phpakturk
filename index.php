@@ -1,0 +1,1 @@
+<?php define("GUVENLIK",true);define('ANADIZIN',__DIR__.'/');define('DIZIN',ANADIZIN);include(ANADIZIN."yukleyici.php");$Uygulama->calistir("site"); ?>

@@ -1,0 +1,3 @@
+<?php defined("GUVENLIK") or die; ?><!DOCTYPE html><html<?=html_attr()?>><head><?php phpakturk_ustalan(); ?></head><body takim-turu="galatasaray"><div class="kapsayici"><nav class="ustalan"><a href="<?=site_url()?>" class="nav-logo"><?=genel_ayarlar("baslik")?></a><ul class="nav-links">
+<li><a href="<?=site_url()?>">Anasayfa</a></li>
+</ul></nav><footer class="footer"><p><?=str_replace("[site_buyil]",date("Y"),genel_ayarlar("altalan"))?></p></footer></div></body></html>

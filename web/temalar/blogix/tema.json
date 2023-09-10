@@ -1,0 +1,14 @@
+{
+  "adi":"Blogix",
+  "website":"",
+  "yazar":"PHPAkTürk",
+  "yazar_website":"",
+  "varliklar":{
+     "stiller":{
+        "stil":"{tema_url}stil.css"
+     },
+     "js":{
+        "tema":"{tema_url}tema.js"
+     }
+  }
+}
