@@ -7,7 +7,7 @@
     "keywords":[
       "phpakturk",
       "phpakturk-tr",
-      "php-mvc",
+      "php-mvc"
     ],
     "require": {
         "php": ">=7.3"
