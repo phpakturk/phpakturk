@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine On
+RewriteRule %{REQUEST_FILENAME} !-d
+RewriteRule %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*?)$ index.php
