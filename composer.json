@@ -2,7 +2,7 @@
     "name": "phpakturk/phpakturk-tr",
     "description": "PHPAkTürk CMS",
     "type": "project",
-    "license": "GPL",
+    "license": "GPL3.0+",
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.3"
