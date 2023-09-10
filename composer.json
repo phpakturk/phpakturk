@@ -2,6 +2,7 @@
     "name": "phpakturk/phpakturk-tr",
     "description": "PHPAkTürk Türkçe Versiyon",
     "type": "project",
+    "version":"1.0",
     "license": "GPL-3.0-or-later",
     "minimum-stability": "stable",
     "keywords":[
